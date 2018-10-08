@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #706581;
+  background: #ffa3ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2913,11 +2913,10 @@ hr {
   }
 }
 body {
-  background: #8a7bb9;
+  background: #fffbf0;
 }
 .sidebar {
-  background-image: url("/images/sidebar.jpg");
-  background-size: 100% 100%;
+  background: rgba(0,0,0,0.8);
 }
 .post {
   margin-top: 60px;
@@ -2929,7 +2928,7 @@ body {
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
 .site-description {
-  color: #fc6423;
+  color: #fff;
   margin-top: 8px;
   font-weight: bold;
 }
