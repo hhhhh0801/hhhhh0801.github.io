@@ -1547,6 +1547,10 @@ pre .javascript .function {
 .post-button {
   margin-top: 40px;
 }
+.post-button .btn {
+  border-bottom: 0;
+  border: 1px solid #ccc;
+}
 .posts-expand .post-tags {
   margin-top: 40px;
   text-align: center;
@@ -1826,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff24fa;
+  background: #706581;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2909,16 +2913,37 @@ hr {
   }
 }
 body {
-  background: #e88090;
+  background: #8a7bb9;
 }
 .sidebar {
-  background-imag: url("/images/sidebar.jpg");
+  background-image: url("/images/sidebar.jpg");
   background-size: 100% 100%;
 }
 .post {
   margin-top: 60px;
   margin-bottom: 60px;
   padding: 25px;
+  background: #fff;
+  text-align: center;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.site-description {
+  color: #fc6423;
+  margin-top: 8px;
+  font-weight: bold;
+}
+.links-of-author-item > a {
+  color: #fff;
+}
+.site-state-posts span {
+  color: #fff;
+}
+.footer-inner,
+.post-button {
+  text-align: center;
+}
+.posts-expand .post-title,
+.posts-expand .post-meta {
+  text-align: center;
 }
