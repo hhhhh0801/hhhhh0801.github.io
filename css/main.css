@@ -487,8 +487,8 @@ pre,
   margin: 20px 0;
   padding: 0;
   font-size: 13px;
-  color: #4d4d4c;
-  background: #f7f7f7;
+  color: #c5c8c6;
+  background: #1d1f21;
   line-height: 1.6;
 }
 pre,
@@ -508,7 +508,7 @@ pre {
 }
 pre code {
   padding: 0;
-  color: #4d4d4c;
+  color: #c5c8c6;
   background: none;
   text-shadow: none;
 }
@@ -531,7 +531,7 @@ pre code {
 }
 .highlight figcaption {
   font-size: 1em;
-  color: #4d4d4c;
+  color: #c5c8c6;
   line-height: 1em;
   margin-bottom: 1em;
 }
@@ -545,23 +545,23 @@ pre code {
 }
 .highlight figcaption a {
   float: right;
-  color: #4d4d4c;
+  color: #c5c8c6;
 }
 .highlight figcaption a:hover {
-  border-bottom-color: #4d4d4c;
+  border-bottom-color: #c5c8c6;
 }
 .highlight .gutter pre {
   padding-left: 10px;
   padding-right: 10px;
-  color: #869194;
+  color: #888f96;
   text-align: right;
-  background-color: #eff2f3;
+  background-color: #000;
 }
 .highlight .code pre {
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #f7f7f7;
+  background-color: #1d1f21;
 }
 .highlight .line {
   height: 20px;
@@ -579,16 +579,16 @@ pre code {
   border: none;
 }
 pre .deletion {
-  background: #fdd;
+  background: #008000;
 }
 pre .addition {
-  background: #dfd;
+  background: #800000;
 }
 pre .meta {
-  color: #8959a8;
+  color: #b294bb;
 }
 pre .comment {
-  color: #8e908c;
+  color: #969896;
 }
 pre .variable,
 pre .attribute,
@@ -602,7 +602,7 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: #c82829;
+  color: #c66;
 }
 pre .number,
 pre .preprocessor,
@@ -611,7 +611,7 @@ pre .literal,
 pre .params,
 pre .constant,
 pre .command {
-  color: #f5871f;
+  color: #de935f;
 }
 pre .ruby .class .title,
 pre .css .rules .attribute,
@@ -624,11 +624,11 @@ pre .xml .cdata,
 pre .special,
 pre .number,
 pre .formula {
-  color: #718c00;
+  color: #b5bd68;
 }
 pre .title,
 pre .css .hexcolor {
-  color: #3e999f;
+  color: #8abeb7;
 }
 pre .function,
 pre .python .decorator,
@@ -638,11 +638,11 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #4271ae;
+  color: #81a2be;
 }
 pre .keyword,
 pre .javascript .function {
-  color: #8959a8;
+  color: #b294bb;
 }
 .full-image.full-image.full-image.full-image {
   border: none;
@@ -1089,8 +1089,9 @@ pre .javascript .function {
 .back-to-top.back-to-top-on {
   bottom: 19px;
 }
-.header {
-  background: transparent;
+#header {
+  background: url("http://47.106.244.20/color.jpg");
+  position: relative;
 }
 .header-inner {
   position: relative;
@@ -1101,7 +1102,14 @@ pre .javascript .function {
 }
 .site-meta {
   margin: 0;
-  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 @media (max-width: 767px) {
   .site-meta {
@@ -1156,7 +1164,7 @@ pre .javascript .function {
 }
 @media (max-width: 767px) {
   .site-nav-toggle {
-    display: block;
+    display: none;
   }
 }
 .site-nav-toggle button {
@@ -1165,13 +1173,12 @@ pre .javascript .function {
   background: transparent;
   border: none;
 }
+.site-nav {
+  position: relative;
+}
 @media (max-width: 767px) {
   .site-nav {
-    display: none;
-    margin: 0 -10px;
-    padding: 0 10px;
     clear: both;
-    border-top: 1px solid #ddd;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1217,6 +1224,16 @@ pre .javascript .function {
 }
 .use-motion .menu-item {
   opacity: 0;
+}
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+  border-bottom: 1px solid #0593d3;
+}
+.post-body p a:hover {
+  color: #fc6423;
+  border-bottom: none;
+  border-bottom: 1px solid #fc6423;
 }
 .post-body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -1544,12 +1561,11 @@ pre .javascript .function {
     display: none;
   }
 }
+.fa-calendar-o {
+  display: none;
+}
 .post-button {
   margin-top: 40px;
-}
-.post-button .btn {
-  border-bottom: 0;
-  border: 1px solid #ccc;
 }
 .posts-expand .post-tags {
   margin-top: 40px;
@@ -1559,6 +1575,18 @@ pre .javascript .function {
   display: inline-block;
   margin-right: 10px;
   font-size: 13px;
+}
+.tag-cloud-tags {
+  background: #fff;
+}
+.tag-cloud-tags a {
+  color: #555 !important;
+  padding: 0 0.5em;
+  border-radius: 5px;
+  background: #d9edf7;
+}
+.tag-cloud-tags a:hover {
+  background-color: #dff0d8;
 }
 .post-nav {
   display: table;
@@ -1830,7 +1858,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fffaf2;
+  background: #ff0070;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2616,9 +2644,19 @@ hr {
 }
 .header {
   background: #f5f5f5;
+  position: relative;
+}
+.header::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2.5em;
+  top: 0;
+  background: #f5f5f5;
+  opacity: 0.8;
 }
 .header-inner {
-  padding: 25px 0 20px;
+  padding: 0 0 280px;
 }
 .header-inner:before,
 .header-inner:after {
@@ -2631,12 +2669,10 @@ hr {
 @media (max-width: 767px) {
   .header-inner {
     width: auto;
-    margin-bottom: 50px;
-    padding: 10px;
+    padding: 0 0 100px;
   }
 }
 .site-meta {
-  float: left;
   margin-left: -20px;
   line-height: normal;
 }
@@ -2647,6 +2683,7 @@ hr {
 }
 .site-meta .brand {
   padding: 2px 1px;
+  color: #fff;
   background: none;
 }
 @media (max-width: 767px) {
@@ -2658,17 +2695,18 @@ hr {
   display: none;
 }
 .site-meta .site-title {
-  font-size: 22px;
+  font-size: 3em;
   font-weight: bolder;
 }
 @media (max-width: 767px) {
   .site-meta .site-title {
     line-height: 34px;
+    font-size: 2em;
   }
 }
 .logo-line-before,
 .logo-line-after {
-  display: block;
+  display: none;
   overflow: hidden;
   margin: 0 auto;
   width: 75%;
@@ -2706,14 +2744,10 @@ hr {
   float: right;
 }
 .menu {
-  float: right;
-  margin: 8px 0 0 0;
-}
-@media (max-width: 767px) {
-  .menu {
-    margin: 20px 0 0 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 .menu br {
   display: none;
@@ -2773,8 +2807,8 @@ hr {
 .posts-expand .post-eof {
   display: none;
 }
-.posts-expand .post {
-  margin-top: 120px;
+.posts-expand .post:last-child {
+  margin-bottom: 0;
 }
 .posts-expand .post:first-child {
   margin-top: 0;
@@ -2828,12 +2862,13 @@ hr {
   text-align: left;
 }
 .post-button a {
-  padding: 0;
+  padding: 2px 5px;
   font-size: 14px;
   background: none;
-  border: none;
-  border-bottom: 2px solid #666;
-  transition-property: border;
+  color: #3f6fe3;
+  border-radius: 2px;
+  border: 1px solid #617ed1;
+  transition: all 0.3s;
 }
 @media (max-width: 767px) {
   .post-button a {
@@ -2846,7 +2881,14 @@ hr {
   }
 }
 .post-button a:hover {
-  border-bottom-color: #222;
+  color: #fff;
+  background: #3f6fe3;
+}
+@media (max-width: 767px) {
+  .post {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
@@ -2871,9 +2913,13 @@ hr {
     padding: 0 10px;
   }
 }
+.container .main-inner {
+  margin-top: 80px;
+}
 @media (max-width: 767px) {
   .container .main-inner {
     width: auto;
+    margin-top: 20px;
   }
 }
 .page-post-detail .post-title,
@@ -2897,7 +2943,6 @@ hr {
   }
 }
 .footer {
-  margin-top: 80px;
   padding: 10px 0;
   background: #f5f5f5;
   color: #666;
@@ -2945,4 +2990,18 @@ body {
 .posts-expand .post-title,
 .posts-expand .post-meta {
   text-align: center;
+}
+@media (max-width: 767px) {
+  .main {
+    padding-bottom: 80px;
+  }
+}
+.posts-expand .post-tags a {
+  color: #555;
+  padding: 0 0.5em;
+  border-radius: 5px;
+  background: #d9edf7;
+}
+.posts-expand .post-tags a:hover {
+  background: #dff0d8;
 }
