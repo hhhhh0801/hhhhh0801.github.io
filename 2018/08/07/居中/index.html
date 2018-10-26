@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="linux," />
+  <meta name="keywords" content="css,居中," />
 
 
 
@@ -79,18 +79,17 @@
 
 
 
-<meta name="description" content="linux出现中文乱码的原因: 未安装中文语言包 未设置正确的默认语言 SSH 终端未正确配置">
-<meta name="keywords" content="linux">
+<meta name="keywords" content="css,居中">
 <meta property="og:type" content="article">
-<meta property="og:title" content="linux中文乱码的解决">
-<meta property="og:url" content="http://yoursite.com/2018/08/26/linux/index.html">
+<meta property="og:title" content="css实现div水平垂直居中的多种方法">
+<meta property="og:url" content="http://yoursite.com/2018/08/07/居中/index.html">
 <meta property="og:site_name" content="HHHHH">
-<meta property="og:description" content="linux出现中文乱码的原因: 未安装中文语言包 未设置正确的默认语言 SSH 终端未正确配置">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-22T09:30:44.062Z">
+<meta property="og:image" content="http://47.106.244.20/hexo/images/%E5%B1%85%E4%B8%AD.PNG">
+<meta property="og:updated_time" content="2018-10-26T10:37:47.201Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="linux中文乱码的解决">
-<meta name="twitter:description" content="linux出现中文乱码的原因: 未安装中文语言包 未设置正确的默认语言 SSH 终端未正确配置">
+<meta name="twitter:title" content="css实现div水平垂直居中的多种方法">
+<meta name="twitter:image" content="http://47.106.244.20/hexo/images/%E5%B1%85%E4%B8%AD.PNG">
 
 
 
@@ -120,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/26/linux/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/07/居中/"/>
 
 
 
 
 
-  <title>linux中文乱码的解决 | HHHHH</title>
+  <title>css实现div水平垂直居中的多种方法 | HHHHH</title>
   
 
 
@@ -278,7 +277,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/26/linux/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/07/居中/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="韩亚慧">
@@ -295,7 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">linux中文乱码的解决</h1>
+          <h1 class="post-title" itemprop="name headline">css实现div水平垂直居中的多种方法</h1>
         
 
         <div class="post-meta">
@@ -307,8 +306,8 @@
               
                 <span class="post-meta-item-text"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-26T00:00:00+08:00">
-                2018-08-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-07T00:00:00+08:00">
+                2018-08-07
               </time>
             
 
@@ -317,6 +316,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/css/" itemprop="url" rel="index">
+                    <span itemprop="name">css</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -345,17 +366,12 @@
       
 
       
-        <h4 id="linux出现中文乱码的原因"><a href="#linux出现中文乱码的原因" class="headerlink" title="linux出现中文乱码的原因:"></a>linux出现中文乱码的原因:</h4><ol>
-<li>未安装中文语言包</li>
-<li>未设置正确的默认语言</li>
-<li>SSH 终端未正确配置<a id="more"></a>
-<h4 id="linux中文乱码的解决"><a href="#linux中文乱码的解决" class="headerlink" title="linux中文乱码的解决:"></a>linux中文乱码的解决:</h4></li>
-<li>首先执行locale –a查看当前系统支持的字符编码</li>
-<li>执行LANG=zh_CN.utf-8修改当前环境语言常量</li>
-<li><p>修改ssh终端例如putty的默认设置，具体设置如下:</p>
-<p> 打开putty–Window–Translation–Remote character set选择UTF-8然后apply即可</p>
-</li>
-</ol>
+        <p><img src="http://47.106.244.20/hexo/images/%E5%B1%85%E4%B8%AD.PNG" alt="居中"><br><a id="more"></a><br>在one div中嵌套two div，使two div居中显示<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;<span class="keyword">div</span> <span class="built_in">class</span>=<span class="string">"one"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> <span class="built_in">class</span>=<span class="string">"two"</span>&gt;&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">    &lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure></p>
+<h5 id="1-父子元素-进行定位-子元素margin-auto-top-0-left-0-bottom-0-right-0"><a href="#1-父子元素-进行定位-子元素margin-auto-top-0-left-0-bottom-0-right-0" class="headerlink" title="1.父子元素 进行定位,子元素margin:auto;top:0;left:0;bottom:0;right:0;"></a>1.父子元素 进行定位,子元素margin:auto;top:0;left:0;bottom:0;right:0;</h5><p>css代码：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.one</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">400px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">    <span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#ccc</span>;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.two</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background</span>: pink;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">margin</span>:auto;</span><br><span class="line">    <span class="attribute">top</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">right</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">bottom</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">left</span>:<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="2-父元素display-table-cell-vertical-align-middle-子元素变成一个内联元素display-inline-block"><a href="#2-父元素display-table-cell-vertical-align-middle-子元素变成一个内联元素display-inline-block" class="headerlink" title="2.父元素display:table-cell;vertical-align:middle;子元素变成一个内联元素display:inline-block"></a>2.父元素display:table-cell;vertical-align:middle;子元素变成一个内联元素display:inline-block</h5><p>css代码：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.one</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">400px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">    <span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#ccc</span>;</span><br><span class="line">    <span class="attribute">display</span>:table-cell;</span><br><span class="line">    <span class="attribute">vertical-align</span>:middle;</span><br><span class="line">    <span class="attribute">text-align</span>: center;	</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.two</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background</span>: pink;</span><br><span class="line">    <span class="attribute">display</span>:inline-block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="3-父元素-flex布局-justify-content-cente-align-items-center子元素就会居中"><a href="#3-父元素-flex布局-justify-content-cente-align-items-center子元素就会居中" class="headerlink" title="3.父元素 flex布局  justify-content:cente;align-items:center子元素就会居中"></a>3.父元素 flex布局  justify-content:cente;align-items:center子元素就会居中</h5><p>css代码：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.one</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">400px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">    <span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#ccc</span>;</span><br><span class="line">    <span class="attribute">display</span>:flex;</span><br><span class="line">    <span class="attribute">justify-content</span>:center;</span><br><span class="line">    <span class="attribute">align-items</span>:center;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.two</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background</span>: pink;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="4-对父元素定位，对子元素绝对定位，子元素left-50-top-50-margin-left-子元素一半的宽度-margin-top-子元素一半的高度px"><a href="#4-对父元素定位，对子元素绝对定位，子元素left-50-top-50-margin-left-子元素一半的宽度-margin-top-子元素一半的高度px" class="headerlink" title="4.对父元素定位，对子元素绝对定位，子元素left:50%,top:50%;margin-left:-子元素一半的宽度;margin-top:-子元素一半的高度px;"></a>4.对父元素定位，对子元素绝对定位，子元素left:50%,top:50%;margin-left:-子元素一半的宽度;margin-top:-子元素一半的高度px;</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">css</span>代码：</span><br><span class="line"><span class="selector-class">.one</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">400px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">    <span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#ccc</span>;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.two</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background</span>: pink;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">margin</span>:auto;</span><br><span class="line">    <span class="attribute">top</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">right</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">bottom</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">left</span>:<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="5-对父元素定位，对子元素绝对定位，子元素top-50-left-50-transform-translate-50-50"><a href="#5-对父元素定位，对子元素绝对定位，子元素top-50-left-50-transform-translate-50-50" class="headerlink" title="5.对父元素定位，对子元素绝对定位，子元素top:50%;left:50%;transform:translate(-50%,-50%);"></a>5.对父元素定位，对子元素绝对定位，子元素top:50%;left:50%;transform:translate(-50%,-50%);</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">css</span>代码：</span><br><span class="line"><span class="selector-class">.one</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">400px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">    <span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#ccc</span>;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.two</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background</span>: pink;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">translate</span>(-50%,-50%);</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -373,7 +389,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/linux/" rel="tag"><i class="fa fa-tag"></i> linux</a>
+            <a href="/tags/css/" rel="tag"><i class="fa fa-tag"></i> css</a>
+          
+            <a href="/tags/居中/" rel="tag"><i class="fa fa-tag"></i> 居中</a>
           
         </div>
       
@@ -386,18 +404,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/23/css1/" rel="next" title="css伪元素::before ::after 的灵活使用">
-                <i class="fa fa-chevron-left"></i> css伪元素::before ::after 的灵活使用
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/08/26/alyun-ftp/" rel="prev" title="阿里云linux配置ftp">
-                阿里云linux配置ftp <i class="fa fa-chevron-right"></i>
+              <a href="/2018/08/23/css1/" rel="prev" title="css伪元素::before ::after 的灵活使用">
+                css伪元素::before ::after 的灵活使用 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -568,7 +582,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#linux出现中文乱码的原因"><span class="nav-number">1.</span> <span class="nav-text">linux出现中文乱码的原因:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#linux中文乱码的解决"><span class="nav-number">2.</span> <span class="nav-text">linux中文乱码的解决:</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-父子元素-进行定位-子元素margin-auto-top-0-left-0-bottom-0-right-0"><span class="nav-number">1.</span> <span class="nav-text">1.父子元素 进行定位,子元素margin:auto;top:0;left:0;bottom:0;right:0;</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-父元素display-table-cell-vertical-align-middle-子元素变成一个内联元素display-inline-block"><span class="nav-number">2.</span> <span class="nav-text">2.父元素display:table-cell;vertical-align:middle;子元素变成一个内联元素display:inline-block</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-父元素-flex布局-justify-content-cente-align-items-center子元素就会居中"><span class="nav-number">3.</span> <span class="nav-text">3.父元素 flex布局  justify-content:cente;align-items:center子元素就会居中</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-对父元素定位，对子元素绝对定位，子元素left-50-top-50-margin-left-子元素一半的宽度-margin-top-子元素一半的高度px"><span class="nav-number">4.</span> <span class="nav-text">4.对父元素定位，对子元素绝对定位，子元素left:50%,top:50%;margin-left:-子元素一半的宽度;margin-top:-子元素一半的高度px;</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-对父元素定位，对子元素绝对定位，子元素top-50-left-50-transform-translate-50-50"><span class="nav-number">5.</span> <span class="nav-text">5.对父元素定位，对子元素绝对定位，子元素top:50%;left:50%;transform:translate(-50%,-50%);</span></a></li></ol></div>
             
 
           </div>

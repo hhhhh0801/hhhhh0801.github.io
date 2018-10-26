@@ -14,6 +14,15 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[阿里云linux配置ftp]]></title>
+    <url>%2F2018%2F08%2F26%2Falyun-ftp%2F</url>
+    <content type="text"><![CDATA[1.在linux中安装vsftpd1$ apt-get install vsftpd 2.查看是否安装vsftpd 1$ vsftpd -version 查看是否出现版本号 3.编辑配置文件1$ vi /etc/vsftpd.conf 将write_enable =YES这一行前的注释#删掉 4.重启服务1$ service vsftpd start 5.在阿里云购买的服务器中添加安全组，主要配置如下 协议类型：自定义TCP 端口范围：20/21 21端口用于连接，20端口用于传输数据 授权对象：0.0.0.0/0 6.用FileZilla、WinSCP等工具进行远程连接之后就可以进行文件传输7.如果远程连接不成功，在FileZilla、WinSCP等工具设置中将传输模式设置为主动模式即可8.如果完成以上步骤就安装成功了9.再说说sftp与ftp的区别 sftp是ssh内含的协议，开启ssh默认就开启了sftp，不需要再安装配置别的类似vsftpd的工具 sftp使用加密传输认证信息和传输数据，相对来说会更安全，但更安全带来副作用就是的效率比FTP要低些 sftp端口号为22]]></content>
+      <tags>
+        <tag>ftp</tag>
+        <tag>阿里云</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[linux中文乱码的解决]]></title>
     <url>%2F2018%2F08%2F26%2Flinux%2F</url>
     <content type="text"><![CDATA[linux出现中文乱码的原因: 未安装中文语言包 未设置正确的默认语言 SSH 终端未正确配置 linux中文乱码的解决: 首先执行locale –a查看当前系统支持的字符编码 执行LANG=zh_CN.utf-8修改当前环境语言常量 修改ssh终端例如putty的默认设置，具体设置如下: 打开putty–Window–Translation–Remote character set选择UTF-8然后apply即可]]></content>
@@ -22,12 +31,27 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[阿里云linux配置ftp]]></title>
-    <url>%2F2018%2F08%2F26%2Falyun-ftp%2F</url>
-    <content type="text"><![CDATA[1.在linux中安装vsftpd1$ apt-get install vsftpd 2.查看是否安装vsftpd 1$ vsftpd -version 查看是否出现版本号 3.编辑配置文件1$ vi /etc/vsftpd.conf 将write_enable =YES这一行前的注释#删掉 4.重启服务1$ service vsftpd start 5.在阿里云购买的服务器中添加安全组，主要配置如下 协议类型：自定义TCP 端口范围：20/21 21端口用于连接，20端口用于传输数据 授权对象：0.0.0.0/0 6.用FileZilla、WinSCP等工具进行远程连接之后就可以进行文件传输7.如果远程连接不成功，在FileZilla、WinSCP等工具设置中将传输模式设置为主动模式即可8.如果完成以上步骤就安装成功了9.再说说sftp与ftp的区别 sftp是ssh内含的协议，开启ssh默认就开启了sftp，不需要再安装配置别的类似vsftpd的工具 sftp使用加密传输认证信息和传输数据，相对来说会更安全，但更安全带来副作用就是的效率比FTP要低些 sftp端口号为22]]></content>
+    <title><![CDATA[css伪元素::before ::after 的灵活使用]]></title>
+    <url>%2F2018%2F08%2F23%2Fcss1%2F</url>
+    <content type="text"><![CDATA[什么是伪元素伪元素表示了某个元素的子元素。这个子元素虽然在逻辑上存在，但却并不实际存在于文档树中。 因为伪元素并不在文档树中，所以通过JS，也抓取不到伪元素，也不能给它绑事件。 ::before ::after表示在当前元素的内容的前面/后面插入一个子元素 伪元素的使用之前清除浮动的时候用到过，后来知道可以灵活使用完成一些奇思妙想的例子 案例1,Demo链接矩形div旋转45度，用::before ::after添加两个相应大小的圆，形成一个爱心主要代码：12345678910111213141516171819202122232425262728293031.heart&#123; width: 100px; height: 100px; background-color: pink; position: relative; left: 50%; margin-left: -50px; top: 200px; transform: rotate(45deg);&#125;.heart::before&#123; content: ""; z-index: -1; position: absolute; width: 100px; height: 100px; background: pink; bottom: 0; left: -50px; border-radius: 50%;&#125;.heart::after&#123; content: ""; position: absolute; width: 100px; height: 100px; background: pink; top: -50px; border-radius: 50%; z-index: -1;&#125;]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
       <tags>
-        <tag>ftp</tag>
-        <tag>阿里云</tag>
+        <tag>css</tag>
+        <tag>伪元素</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[css实现div水平垂直居中的多种方法]]></title>
+    <url>%2F2018%2F08%2F07%2F%E5%B1%85%E4%B8%AD%2F</url>
+    <content type="text"><![CDATA[在one div中嵌套two div，使two div居中显示12345&lt;body&gt; &lt;div class="one"&gt; &lt;div class="two"&gt;&lt;/div&gt; &lt;/div&gt;&lt;/body&gt; 1.父子元素 进行定位,子元素margin:auto;top:0;left:0;bottom:0;right:0;css代码：1234567891011121314151617.one&#123; width: 400px; height: 400px; border:1px solid #ccc; position: relative;&#125;.two&#123; width: 200px; height: 200px; background: pink; position: absolute; margin:auto; top:0; right:0; bottom:0; left:0;&#125; 2.父元素display:table-cell;vertical-align:middle;子元素变成一个内联元素display:inline-blockcss代码：1234567891011121314.one&#123; width: 400px; height: 400px; border:1px solid #ccc; display:table-cell; vertical-align:middle; text-align: center; &#125;.two&#123; width: 200px; height: 200px; background: pink; display:inline-block;&#125; 3.父元素 flex布局 justify-content:cente;align-items:center子元素就会居中css代码：12345678910111213.one&#123; width: 400px; height: 400px; border:1px solid #ccc; display:flex; justify-content:center; align-items:center;&#125;.two&#123; width: 200px; height: 200px; background: pink;&#125; 4.对父元素定位，对子元素绝对定位，子元素left:50%,top:50%;margin-left:-子元素一半的宽度;margin-top:-子元素一半的高度px;123456789101112131415161718css代码：.one&#123; width: 400px; height: 400px; border:1px solid #ccc; position: relative;&#125;.two&#123; width: 200px; height: 200px; background: pink; position: absolute; margin:auto; top:0; right:0; bottom:0; left:0;&#125; 5.对父元素定位，对子元素绝对定位，子元素top:50%;left:50%;transform:translate(-50%,-50%);1234567891011121314151617css代码：.one&#123; width: 400px; height: 400px; border:1px solid #ccc; position: relative;&#125;.two&#123; width: 200px; height: 200px; background: pink; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); &#125;]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>居中</tag>
       </tags>
   </entry>
 </search>
