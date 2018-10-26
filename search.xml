@@ -14,6 +14,30 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[css伪元素::before ::after 的灵活使用(二)]]></title>
+    <url>%2F2018%2F08%2F28%2Fcss2%2F</url>
+    <content type="text"><![CDATA[案例1Demo链接1.矩形设置border-radius:50%变成圆2.使用渐变linear-gradient给圆设置颜色3.用::before在圆的左侧放一个矩形，高为圆的高，宽为半径4.使矩形旋转30deg5.给圆设置overflow:hidden6.当鼠标放上，使矩形旋转0.35turn（备注：1turn=2πrad=360deg）主要代码：12345678910111213141516171819202122232425262728.pie&#123; width: 200px; line-height: 200px; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; color: #fff; overflow:hidden; background-image: linear-gradient(to right, teal 50%, #655 50%);&#125;.pie::before&#123; content:""; position:absolute; top:0;left:50%; width:50%;height:100%; background-color: teal; transform-origin: left; z-index:-1; transform:rotate(30deg);&#125;.pie:hover:before&#123; transition:all 1s; transform:rotate(.35turn);&#125;]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>伪元素</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[css3 box-shadow 的灵活使用]]></title>
+    <url>%2F2018%2F08%2F28%2Fcss3%2F</url>
+    <content type="text"><![CDATA[用box-shadow产生遮罩Demo链接 box-shadow: h-shadow v-shadow blur spread color inset; h-shadow 必需，水平阴影的位置 v-shadow 必需，垂直阴影的位置 blur 可选，模糊距离 spread 可选，阴影的尺寸 color 可选，阴影的颜色 inset 可选，将外部阴影 (outset) 改为内部阴影鼠标放到按钮上，按钮 transform:scale(1.1)放大1.1倍，按钮通过box-shadow:0 0 0 1920px rgba(0,0,0,.5)设置，将水平垂直阴影和模糊距离设为0，阴影的尺寸设为屏幕尺寸。可产生遮罩的视觉效果。 主要代码：1234567891011121314151617.box&#123; width: 150px; height: 80px; background: #E91E63; position: absolute; top:50%; left: 50%; transform:translate(-50%,-50%); text-align: center; transition: transform .2s; border-radius: 5px; cursor: pointer; line-height: 80px;&#125;.box:hover&#123; transform:scale(1.1); box-shadow:0 0 0 1920px rgba(0,0,0,.5);&#125;]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>box-shadow</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[阿里云linux配置ftp]]></title>
     <url>%2F2018%2F08%2F26%2Falyun-ftp%2F</url>
     <content type="text"><![CDATA[1.在linux中安装vsftpd1$ apt-get install vsftpd 2.查看是否安装vsftpd 1$ vsftpd -version 查看是否出现版本号 3.编辑配置文件1$ vi /etc/vsftpd.conf 将write_enable =YES这一行前的注释#删掉 4.重启服务1$ service vsftpd start 5.在阿里云购买的服务器中添加安全组，主要配置如下 协议类型：自定义TCP 端口范围：20/21 21端口用于连接，20端口用于传输数据 授权对象：0.0.0.0/0 6.用FileZilla、WinSCP等工具进行远程连接之后就可以进行文件传输7.如果远程连接不成功，在FileZilla、WinSCP等工具设置中将传输模式设置为主动模式即可8.如果完成以上步骤就安装成功了9.再说说sftp与ftp的区别 sftp是ssh内含的协议，开启ssh默认就开启了sftp，不需要再安装配置别的类似vsftpd的工具 sftp使用加密传输认证信息和传输数据，相对来说会更安全，但更安全带来副作用就是的效率比FTP要低些 sftp端口号为22]]></content>
@@ -26,14 +50,17 @@
     <title><![CDATA[linux中文乱码的解决]]></title>
     <url>%2F2018%2F08%2F26%2Flinux%2F</url>
     <content type="text"><![CDATA[linux出现中文乱码的原因: 未安装中文语言包 未设置正确的默认语言 SSH 终端未正确配置 linux中文乱码的解决: 首先执行locale –a查看当前系统支持的字符编码 执行LANG=zh_CN.utf-8修改当前环境语言常量 修改ssh终端例如putty的默认设置，具体设置如下: 打开putty–Window–Translation–Remote character set选择UTF-8然后apply即可]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
       <tags>
         <tag>linux</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[css伪元素::before ::after 的灵活使用]]></title>
+    <title><![CDATA[css伪元素::before ::after 的灵活使用(一)]]></title>
     <url>%2F2018%2F08%2F23%2Fcss1%2F</url>
-    <content type="text"><![CDATA[什么是伪元素伪元素表示了某个元素的子元素。这个子元素虽然在逻辑上存在，但却并不实际存在于文档树中。 因为伪元素并不在文档树中，所以通过JS，也抓取不到伪元素，也不能给它绑事件。 ::before ::after表示在当前元素的内容的前面/后面插入一个子元素 伪元素的使用之前清除浮动的时候用到过，后来知道可以灵活使用完成一些奇思妙想的例子 案例1,Demo链接矩形div旋转45度，用::before ::after添加两个相应大小的圆，形成一个爱心主要代码：12345678910111213141516171819202122232425262728293031.heart&#123; width: 100px; height: 100px; background-color: pink; position: relative; left: 50%; margin-left: -50px; top: 200px; transform: rotate(45deg);&#125;.heart::before&#123; content: ""; z-index: -1; position: absolute; width: 100px; height: 100px; background: pink; bottom: 0; left: -50px; border-radius: 50%;&#125;.heart::after&#123; content: ""; position: absolute; width: 100px; height: 100px; background: pink; top: -50px; border-radius: 50%; z-index: -1;&#125;]]></content>
+    <content type="text"><![CDATA[什么是伪元素伪元素表示了某个元素的子元素。这个子元素虽然在逻辑上存在，但却并不实际存在于文档树中。 因为伪元素并不在文档树中，所以通过JS，也抓取不到伪元素，也不能给它绑事件。 ::before ::after表示在当前元素的内容的前面/后面插入一个子元素 伪元素的使用 之前清除浮动的时候用到过，后来知道可以灵活使用完成一些奇思妙想的例子 案例1Demo链接矩形div旋转45度，用::before ::after添加两个相应大小的圆，形成一个爱心主要代码：12345678910111213141516171819202122232425262728293031.heart&#123; width: 100px; height: 100px; background-color: pink; position: relative; left: 50%; margin-left: -50px; top: 200px; transform: rotate(45deg);&#125;.heart::before&#123; content: ""; z-index: -1; position: absolute; width: 100px; height: 100px; background: pink; bottom: 0; left: -50px; border-radius: 50%;&#125;.heart::after&#123; content: ""; position: absolute; width: 100px; height: 100px; background: pink; top: -50px; border-radius: 50%; z-index: -1;&#125; 案例2Demo链接一个矩形div，用::before在下面放一个小矩形，用::after在小矩形的上面放一个大小相应的矩形，通过transform: skew(-45deg)变形形成一个菱形，最后形成一个对话框主要代码：12345678910111213141516171819202122232425262728.bubbly&#123; width: 200px; height: 100px; background: pink; position: absolute; top:50%; left: 50%; transform:translate(-50%,-50%); text-align: center;&#125; .bubbly::before&#123; content: ""; position: absolute; top:101px; left: 85px; width: 30px; height: 30px; background: pink;&#125; .bubbly::after&#123; content: ""; position: absolute; bottom: -31px; left: 100px; width: 30px; height: 30px; background: red; transform: skew(-45deg);&#125; 案例3Demo链接 利用切角、伪类、渐变、旋转实现 主要代码： 1234567891011121314151617181920212223 .corner&#123; width: 200px; height: 200px; position: absolute; left: 50%; top:50%; transform: translate(-50%,-50%); background:linear-gradient(-150deg,transparent 1.5em,pink 0); text-align: center; line-height: 200px;&#125; .corner::after&#123; content: ''; position: absolute; top: 0; right: 0; background: red; background: linear-gradient(to left bottom,transparent 50%, rgba(0,0,0,.2) 0, rgba(0,0,0,.4)) 100% 0 no-repeat; width: 1.73em; height: 3em; /*利用三角函数求得*/ transform: translateY(-1.3em) rotate(-30deg); transform-origin: bottom right; border-bottom-left-radius: inherit; box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15);&#125;]]></content>
       <categories>
         <category>css</category>
       </categories>
