@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="css,伪元素," />
+  <meta name="keywords" content="git," />
 
 
 
@@ -79,22 +79,18 @@
 
 
 
-<meta name="description" content="什么是伪元素伪元素表示了某个元素的子元素。这个子元素虽然在逻辑上存在，但却并不实际存在于文档树中。 因为伪元素并不在文档树中，所以通过JS，也抓取不到伪元素，也不能给它绑事件。 ::before ::after表示在当前元素的内容的前面/后面插入一个子元素 伪元素的使用  之前清除浮动的时候用到过，后来知道可以灵活使用完成一些奇思妙想的例子">
-<meta name="keywords" content="css,伪元素">
+<meta name="description" content="使用git有一段时间了，觉得应该总结一下，以便忘了可以查看 一.创建本地仓库将当前目录初始化为一个本地仓库  确保已安装git 将当前目录初始化为一个本地仓库 1$ git init  将文件交由git追踪 1$ git add *">
+<meta name="keywords" content="git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="css伪元素::before ::after 的灵活使用(一)">
-<meta property="og:url" content="http://yoursite.com/2018/08/23/css1/index.html">
+<meta property="og:title" content="git的使用">
+<meta property="og:url" content="http://yoursite.com/2018/09/01/git/index.html">
 <meta property="og:site_name" content="HHHHH">
-<meta property="og:description" content="什么是伪元素伪元素表示了某个元素的子元素。这个子元素虽然在逻辑上存在，但却并不实际存在于文档树中。 因为伪元素并不在文档树中，所以通过JS，也抓取不到伪元素，也不能给它绑事件。 ::before ::after表示在当前元素的内容的前面/后面插入一个子元素 伪元素的使用  之前清除浮动的时候用到过，后来知道可以灵活使用完成一些奇思妙想的例子">
+<meta property="og:description" content="使用git有一段时间了，觉得应该总结一下，以便忘了可以查看 一.创建本地仓库将当前目录初始化为一个本地仓库  确保已安装git 将当前目录初始化为一个本地仓库 1$ git init  将文件交由git追踪 1$ git add *">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://47.106.244.20/hexo/images/heart.PNG">
-<meta property="og:image" content="http://47.106.244.20/hexo/images/bubbly.PNG">
-<meta property="og:image" content="http://47.106.244.20/hexo/images/corner.PNG">
-<meta property="og:updated_time" content="2018-10-26T14:20:20.446Z">
+<meta property="og:updated_time" content="2018-10-27T07:45:36.686Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="css伪元素::before ::after 的灵活使用(一)">
-<meta name="twitter:description" content="什么是伪元素伪元素表示了某个元素的子元素。这个子元素虽然在逻辑上存在，但却并不实际存在于文档树中。 因为伪元素并不在文档树中，所以通过JS，也抓取不到伪元素，也不能给它绑事件。 ::before ::after表示在当前元素的内容的前面/后面插入一个子元素 伪元素的使用  之前清除浮动的时候用到过，后来知道可以灵活使用完成一些奇思妙想的例子">
-<meta name="twitter:image" content="http://47.106.244.20/hexo/images/heart.PNG">
+<meta name="twitter:title" content="git的使用">
+<meta name="twitter:description" content="使用git有一段时间了，觉得应该总结一下，以便忘了可以查看 一.创建本地仓库将当前目录初始化为一个本地仓库  确保已安装git 将当前目录初始化为一个本地仓库 1$ git init  将文件交由git追踪 1$ git add *">
 
 
 
@@ -124,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/23/css1/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/01/git/"/>
 
 
 
 
 
-  <title>css伪元素::before ::after 的灵活使用(一) | HHHHH</title>
+  <title>git的使用 | HHHHH</title>
   
 
 
@@ -282,7 +278,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/23/css1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/01/git/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="韩亚慧">
@@ -299,7 +295,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">css伪元素::before ::after 的灵活使用(一)</h1>
+          <h1 class="post-title" itemprop="name headline">git的使用</h1>
         
 
         <div class="post-meta">
@@ -311,8 +307,8 @@
               
                 <span class="post-meta-item-text"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-23T00:00:00+08:00">
-                2018-08-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-01T00:00:00+08:00">
+                2018-09-01
               </time>
             
 
@@ -334,8 +330,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/css/" itemprop="url" rel="index">
-                    <span itemprop="name">css</span>
+                  <a href="/categories/git/" itemprop="url" rel="index">
+                    <span itemprop="name">git</span>
                   </a>
                 </span>
 
@@ -371,13 +367,60 @@
       
 
       
-        <h4 id="什么是伪元素"><a href="#什么是伪元素" class="headerlink" title="什么是伪元素"></a>什么是伪元素</h4><pre><code>伪元素表示了某个元素的子元素。这个子元素虽然在逻辑上存在，但却并不实际存在于文档树中。
-因为伪元素并不在文档树中，所以通过JS，也抓取不到伪元素，也不能给它绑事件。
-::before ::after表示在当前元素的内容的前面/后面插入一个子元素
-</code></pre><h4 id="伪元素的使用"><a href="#伪元素的使用" class="headerlink" title="伪元素的使用"></a>伪元素的使用</h4><p>  之前清除浮动的时候用到过，后来知道可以灵活使用完成一些奇思妙想的例子<br><a id="more"></a></p>
-<h4 id="案例1Demo链接"><a href="#案例1Demo链接" class="headerlink" title="案例1Demo链接"></a>案例1<a href="http://47.106.244.20/hexo/demo/heart.html" target="_blank" rel="noopener">Demo链接</a></h4><p>矩形div旋转45度，用::before ::after添加两个相应大小的圆，形成一个爱心<br><img src="http://47.106.244.20/hexo/images/heart.PNG" alt="heart"><br>主要代码：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.heart</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: pink;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">rotate</span>(45deg);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.heart</span><span class="selector-pseudo">::before</span>&#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">  <span class="attribute">z-index</span>: -<span class="number">1</span>;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: pink;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">left</span>: -<span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.heart</span><span class="selector-pseudo">::after</span>&#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: pink;</span><br><span class="line">  <span class="attribute">top</span>: -<span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">z-index</span>: -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h4 id="案例2Demo链接"><a href="#案例2Demo链接" class="headerlink" title="案例2Demo链接"></a>案例2<a href="http://47.106.244.20/hexo/demo/bubbly.html" target="_blank" rel="noopener">Demo链接</a></h4><p>一个矩形div，用::before在下面放一个小矩形，用::after在小矩形的上面放一个大小相应的矩形，通过transform: skew(-45deg)变形形成一个菱形，最后形成一个对话框<br><img src="http://47.106.244.20/hexo/images/bubbly.PNG" alt="bubbly"><br>主要代码：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.bubbly</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: pink;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>:<span class="number">50%</span>; <span class="attribute">left</span>: <span class="number">50%</span>; </span><br><span class="line">  <span class="attribute">transform</span>:<span class="built_in">translate</span>(-50%,-50%);</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">&#125;</span><br><span class="line">  <span class="selector-class">.bubbly</span><span class="selector-pseudo">::before</span>&#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>:<span class="number">101px</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">85px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">background</span>: pink;</span><br><span class="line">&#125;</span><br><span class="line">  <span class="selector-class">.bubbly</span><span class="selector-pseudo">::after</span>&#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">bottom</span>: -<span class="number">31px</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">background</span>: red;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">skew</span>(-45deg);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h4 id="案例3Demo链接"><a href="#案例3Demo链接" class="headerlink" title="案例3Demo链接"></a>案例3<a href="http://47.106.244.20/hexo/demo/corner.html" target="_blank" rel="noopener">Demo链接</a></h4><p>  利用切角、伪类、渐变、旋转实现<br>  <img src="http://47.106.244.20/hexo/images/corner.PNG" alt="corner"><br>  主要代码：<br>  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">  <span class="selector-class">.corner</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">top</span>:<span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translate</span>(-50%,-50%);</span><br><span class="line">  <span class="attribute">background</span>:<span class="built_in">linear-gradient</span>(-150deg,transparent 1.5em,pink 0);</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">200px</span>;</span><br><span class="line">&#125;</span><br><span class="line">  <span class="selector-class">.corner</span><span class="selector-pseudo">::after</span>&#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">''</span>;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">0</span>; <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">background</span>: red;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(to left bottom,transparent 50%, rgba(0,0,0,.2) <span class="number">0</span>, <span class="built_in">rgba</span>(0,0,0,.4)) <span class="number">100%</span> <span class="number">0</span> no-repeat;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">1.73em</span>; <span class="attribute">height</span>: <span class="number">3em</span>;  <span class="comment">/*利用三角函数求得*/</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translateY</span>(-1.3em) <span class="built_in">rotate</span>(-30deg);</span><br><span class="line">  <span class="attribute">transform-origin</span>: bottom right;</span><br><span class="line">  <span class="attribute">border-bottom-left-radius</span>: inherit;</span><br><span class="line">  <span class="attribute">box-shadow</span>: -.<span class="number">2em</span> .<span class="number">2em</span> .<span class="number">3em</span> -.<span class="number">1em</span> <span class="built_in">rgba</span>(0,0,0,.15);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+        <p>使用git有一段时间了，觉得应该总结一下，以便忘了可以查看</p>
+<h5 id="一-创建本地仓库"><a href="#一-创建本地仓库" class="headerlink" title="一.创建本地仓库"></a>一.创建本地仓库</h5><p>将当前目录初始化为一个本地仓库</p>
+<ol>
+<li>确保已安装git</li>
+<li><p>将当前目录初始化为一个本地仓库</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git init</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将文件交由git追踪</p>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="keyword">add</span><span class="bash"> *</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<a id="more"></a>
+<ol start="4">
+<li><p>提交</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git commit -m <span class="string">"提交内容"</span></span></span><br></pre></td></tr></table></figure>
+<p>首次使用git会出现问题，git需要你告诉它你是谁<br>github信息:  邮箱：<a href="mailto:hanyh@163.com" target="_blank" rel="noopener">hanyh@163.com</a>     用户名：hanyh</p>
+<p> 配置用户信息</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git<span class="built_in"> config </span>user.email <span class="string">"hanyh@163.com"</span></span><br><span class="line">$ git<span class="built_in"> config </span>user.name <span class="string">"hanyh"</span></span><br></pre></td></tr></table></figure>
+<p>查看所有配置信息</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git<span class="built_in"> config </span>--list</span><br></pre></td></tr></table></figure>
+<p>当设置好用户信息之后才可以进行提交</p>
+</li>
+<li><p>查看当前提交日志</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>版本回退(时光穿梭机)<br> 通过git log查看版本id </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span></span></span><br></pre></td></tr></table></figure>
+<p>进行重置</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git reset --hard 版本id</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看所有历史提交日志</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git reflog</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h5 id="二-创建远程仓库"><a href="#二-创建远程仓库" class="headerlink" title="二.创建远程仓库"></a>二.创建远程仓库</h5><ol>
+<li>注册登录GitHub，首页点击Repositories–&gt;New</li>
+<li>然后填写项目的名称、项目简单描述并勾选创建README.md文件的选项</li>
+<li>远程仓库地址：<a href="https://github.com/用户名/仓库名.git" target="_blank" rel="noopener">https://github.com/用户名/仓库名.git</a></li>
+</ol>
+<h5 id="三-将本地仓库与远程仓库绑定"><a href="#三-将本地仓库与远程仓库绑定" class="headerlink" title="三.将本地仓库与远程仓库绑定"></a>三.将本地仓库与远程仓库绑定</h5><ol>
+<li>复制远程仓库地址</li>
+<li>然后使用以下命令<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote <span class="built_in">add</span> origin http<span class="variable">s:</span>//github.<span class="keyword">com</span>/用户名/仓库名.git</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h5 id="四-同步本地仓库和远程仓库"><a href="#四-同步本地仓库和远程仓库" class="headerlink" title="四.同步本地仓库和远程仓库"></a>四.同步本地仓库和远程仓库</h5><ol>
+<li><p>先将远程仓库中的代码更新到本地</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull origin <span class="keyword">master</span> <span class="title">--allow-unrelated-histories</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>再将本地代码进行提交</p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">push</span> <span class="built_in">origin</span> master</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h5 id="五-多人协作"><a href="#五-多人协作" class="headerlink" title="五.多人协作"></a>五.多人协作</h5><p>   暂时还没有用过，以后有机会用了再写</p>
+<h5 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h5><p>git命令多，要多练习多使用才能掌握，实践出真知。</p>
 
       
     </div>
@@ -395,9 +438,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/css/" rel="tag"><i class="fa fa-tag"></i> css</a>
-          
-            <a href="/tags/伪元素/" rel="tag"><i class="fa fa-tag"></i> 伪元素</a>
+            <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
           
         </div>
       
@@ -410,8 +451,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/07/居中/" rel="next" title="css实现div水平垂直居中的多种方法">
-                <i class="fa fa-chevron-left"></i> css实现div水平垂直居中的多种方法
+              <a href="/2018/08/26/alyun-ftp/" rel="next" title="阿里云linux配置ftp">
+                <i class="fa fa-chevron-left"></i> 阿里云linux配置ftp
               </a>
             
           </div>
@@ -420,8 +461,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/08/26/linux/" rel="prev" title="linux中文乱码的解决">
-                linux中文乱码的解决 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/10/10/ES6-rest/" rel="prev" title="ES6中扩展运算符和rest参数的用法">
+                ES6中扩展运算符和rest参数的用法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -508,7 +549,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -519,7 +560,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 
               </div>
@@ -530,7 +571,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -592,7 +633,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是伪元素"><span class="nav-number">1.</span> <span class="nav-text">什么是伪元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#伪元素的使用"><span class="nav-number">2.</span> <span class="nav-text">伪元素的使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#案例1Demo链接"><span class="nav-number">3.</span> <span class="nav-text">案例1Demo链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#案例2Demo链接"><span class="nav-number">4.</span> <span class="nav-text">案例2Demo链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#案例3Demo链接"><span class="nav-number">5.</span> <span class="nav-text">案例3Demo链接</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#一-创建本地仓库"><span class="nav-number">1.</span> <span class="nav-text">一.创建本地仓库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#二-创建远程仓库"><span class="nav-number">2.</span> <span class="nav-text">二.创建远程仓库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#三-将本地仓库与远程仓库绑定"><span class="nav-number">3.</span> <span class="nav-text">三.将本地仓库与远程仓库绑定</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#四-同步本地仓库和远程仓库"><span class="nav-number">4.</span> <span class="nav-text">四.同步本地仓库和远程仓库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#五-多人协作"><span class="nav-number">5.</span> <span class="nav-text">五.多人协作</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#小结"><span class="nav-number">6.</span> <span class="nav-text">小结</span></a></li></ol></div>
             
 
           </div>
