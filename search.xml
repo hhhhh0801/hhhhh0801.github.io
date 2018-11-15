@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[前端小工具介绍]]></title>
+    <url>%2F2018%2F11%2F15%2F%E5%B0%8F%E5%B7%A5%E5%85%B7%2F</url>
+    <content type="text"><![CDATA[1.浏览器取色器ColorZilla在浏览器中找到附加组件，搜索并添加ColorZilla，ColorZilla可以实现在线网页的取色，方便好用。 2.在线作图工具ProcessOn我一般用它画思维导图，做知识的梳理，附上地址：https://www.processon.com/ ，以下是ProcessOn的官方介绍。 ProcessOn是一款基于HTML5和JavaScript技术开发而成。 操作简单、方便的同时也是一款专业的垂直在线作图工具。 使用ProcessOn不需要下载和安装，更不需要破解和激活， 打开浏览器即可在线操作所有数据实时云端存储， 同时支持多人在线实时协作，从此再也不需要和同事， 领导之间来回传送文件，直接邀请，一起协作完成。 ProcessOn目前已经支持流程图、原型设计、软件建模、 以及思维导图等四大领域在线作图。 ProcessOn同时也是一款免费的在线作图工具。 如果你也是新手，工作需要画画图，ProcessOn就是你最合适的选择！3.在线色彩搭配ColorSchemeDesignerColorSchemeDesigner是一个在线配色小工具，它有单色搭配、互补色搭配、三角形搭配等多种搭配方式，还有网页演示功能。地址：http://www.peise.net/tools/web/4.GIF截屏工具GifCam作为一名程序员，大多数人都有自己的博客，经常会上传gif的动图，GifCam是一个gif录制工具，又小又好用。百度云下载链接：https://pan.baidu.com/s/1uSx2V80uOQKuqHpM6v6izQ]]></content>
+      <categories>
+        <category>小工具</category>
+      </categories>
+      <tags>
+        <tag>取色器</tag>
+        <tag>作图工具</tag>
+        <tag>色彩搭配</tag>
+        <tag>GIF截屏</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[ES6中扩展运算符和rest参数的用法]]></title>
     <url>%2F2018%2F10%2F10%2FES6-rest%2F</url>
     <content type="text"><![CDATA[rest参数形式为(…变量名)，用于获取函数的多余参数，生成一个数组，这样就不需要使用arguments对象了。1234567891011function input(...params)&#123; console.log(params)&#125; input(1,2,3,4) //[1,2,3,4] function input2(a,b,...params)&#123; console.log(params)&#125; input2(1,2,3,4) //[3,4] 扩展运算符扩展运算符（spread）是三个点(…)。好比是rest参数的逆运算，将一个数组转为用逗号分割的参数序列。123456function foo(a,b,c)&#123; console.log(a); //1 console.log(b); //2 console.log(c); //3&#125;foo(...[1,2,3]);]]></content>

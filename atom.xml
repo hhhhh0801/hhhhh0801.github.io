@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-27T06:22:55.820Z</updated>
+  <updated>2018-11-15T07:14:15.239Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端小工具介绍</title>
+    <link href="http://yoursite.com/2018/11/15/%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
+    <id>http://yoursite.com/2018/11/15/小工具/</id>
+    <published>2018-11-14T16:00:00.000Z</published>
+    <updated>2018-11-15T07:14:15.239Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-浏览器取色器ColorZilla"><a href="#1-浏览器取色器ColorZilla" class="headerlink" title="1.浏览器取色器ColorZilla"></a>1.浏览器取色器ColorZilla</h4><p>在浏览器中找到附加组件，搜索并添加ColorZilla，ColorZilla可以实现在线网页的取色，方便好用。</p><h4 id="2-在线作图工具ProcessOn"><a href="#2-在线作图工具ProcessOn" class="headerlink" title="2.在线作图工具ProcessOn"></a>2.在线作图工具ProcessOn</h4><p>我一般用它画思维导图，做知识的梳理，附上地址：<a href="https://www.processon.com/" target="_blank" rel="noopener">https://www.processon.com/</a> ，以下是ProcessOn的官方介绍。</p><ol><li>ProcessOn是一款基于HTML5和JavaScript技术开发而成。 操作简单、方便的同时也是一款专业的垂直在线作图工具。</li><li>使用ProcessOn不需要下载和安装，更不需要破解和激活， 打开浏览器即可在线操作所有数据实时云端存储， 同时支持多人在线实时协作，从此再也不需要和同事， 领导之间来回传送文件，直接邀请，一起协作完成。</li><li>ProcessOn目前已经支持流程图、原型设计、软件建模、 以及思维导图等四大领域在线作图。</li><li>ProcessOn同时也是一款免费的在线作图工具。 如果你也是新手，工作需要画画图，ProcessOn就是你最合适的选择！<h4 id="3-在线色彩搭配ColorSchemeDesigner"><a href="#3-在线色彩搭配ColorSchemeDesigner" class="headerlink" title="3.在线色彩搭配ColorSchemeDesigner"></a>3.在线色彩搭配ColorSchemeDesigner</h4>ColorSchemeDesigner是一个在线配色小工具，它有单色搭配、互补色搭配、三角形搭配等多种搭配方式，还有网页演示功能。<br>地址：<a href="http://www.peise.net/tools/web/" target="_blank" rel="noopener">http://www.peise.net/tools/web/</a><h4 id="4-GIF截屏工具GifCam"><a href="#4-GIF截屏工具GifCam" class="headerlink" title="4.GIF截屏工具GifCam"></a>4.GIF截屏工具GifCam</h4>作为一名程序员，大多数人都有自己的博客，经常会上传gif的动图，GifCam是一个gif录制工具，又小又好用。<br>百度云下载链接：<a href="https://pan.baidu.com/s/1uSx2V80uOQKuqHpM6v6izQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1uSx2V80uOQKuqHpM6v6izQ</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;1-浏览器取色器ColorZilla&quot;&gt;&lt;a href=&quot;#1-浏览器取色器ColorZilla&quot; class=&quot;headerlink&quot; title=&quot;1.浏览器取色器ColorZilla&quot;&gt;&lt;/a&gt;1.浏览器取色器ColorZilla&lt;/h4&gt;&lt;p&gt;在浏览器中找
+      
+    
+    </summary>
+    
+      <category term="小工具" scheme="http://yoursite.com/categories/%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="取色器" scheme="http://yoursite.com/tags/%E5%8F%96%E8%89%B2%E5%99%A8/"/>
+    
+      <category term="作图工具" scheme="http://yoursite.com/tags/%E4%BD%9C%E5%9B%BE%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="色彩搭配" scheme="http://yoursite.com/tags/%E8%89%B2%E5%BD%A9%E6%90%AD%E9%85%8D/"/>
+    
+      <category term="GIF截屏" scheme="http://yoursite.com/tags/GIF%E6%88%AA%E5%B1%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>ES6中扩展运算符和rest参数的用法</title>
